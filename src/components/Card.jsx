@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 function Card({data,reference}) {
   
   return (
-    <motion.div drag dragConstraints={reference} whileDrag={{scale:1.4}} whileTap={{ scale: 0.7 }} whileFocus={{ scale: 1.2 }}  whileHover={{ scale: 1.1 }} dragTransition={{bounceStiffness:500, bounceDamping:25}}
+    <motion.div drag dragConstraints={reference} whileDrag={{scale:1.4}} whileTap={{ scale: 0.7 }} whileFocus={{ scale: 1.2 }}  whileHover={{ scale: 1.1 }} dragTransition={{bounceStiffness:200, bounceDamping:25}}
     className='relative w-60 h-80 rounded-[45px] bg-zinc-900/90 text-white px-8 py-10 overflow-hidden'>
         <FaFileAlt/>
         <p className='text-m mt-5 leading-6 font-semibold'>{data.description}</p>
